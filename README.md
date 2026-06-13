@@ -1,10 +1,9 @@
-Primera Práctica — Estructuras de Datos
+# Primera Práctica — Estructuras de Datos
 
 Proyecto de Estructuras de Datos, Universidad Cenfotec.
 
-Estudiantes
+## Estudiantes
 
-
-José Ricardo Barrantes Sáenz
-Julián Alfonso Cerdas Badilla
-Flory Alexandra Gamboa Hernández
+- José Ricardo Barrantes Sáenz
+- Julián Alfonso Cerdas Badilla
+- Flory Alexandra Gamboa Hernández
