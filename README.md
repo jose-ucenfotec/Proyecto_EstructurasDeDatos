@@ -1,2 +1,10 @@
-# Proyecto_EstructurasDeDatos
-Repo para el proyecto y avances del grupo 2 de Estructuras de datos
+Primera Práctica — Estructuras de Datos
+
+Proyecto de Estructuras de Datos, Universidad Cenfotec.
+
+Estudiantes
+
+
+José Ricardo Barrantes Sáenz
+Julián Alfonso Cerdas Badilla
+Flory Alexandra Gamboa Hernández
