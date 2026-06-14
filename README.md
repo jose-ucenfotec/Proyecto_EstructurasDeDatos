@@ -1,4 +1,4 @@
-# Primera Práctica — Estructuras de Datos
+# Proyecto — Estructuras de Datos
 
 Proyecto de Estructuras de Datos, Universidad Cenfotec.
 
