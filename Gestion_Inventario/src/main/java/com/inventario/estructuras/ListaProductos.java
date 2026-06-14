@@ -49,6 +49,11 @@ public class ListaProductos {
         return null;
     }
 
+    public Producto modificar(String nombre) {
+        NodoProducto nodo = buscar(nombre);
+        return (nodo == null) ? null : nodo.getProducto();
+    }
+
     public NodoProducto eliminar(String nombre) {
         if (estaVacia()) {
             System.out.println("La lista de productos esta vacia.\n");

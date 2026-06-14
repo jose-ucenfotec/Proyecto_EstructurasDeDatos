@@ -82,10 +82,9 @@ public class Main {
 
     private static void modificarProducto() {
         String nombre = leerTexto("Ingrese el nombre del producto a modificar: ");
-        NodoProducto nodo = LISTA_PRODUCTOS.buscar(nombre);
-        if (nodo == null) return;
+        Producto producto = LISTA_PRODUCTOS.modificar(nombre);
+        if (producto == null) return;
 
-        Producto producto = nodo.getProducto();
         int opcion;
         do {
             System.out.println("--- Modificando: " + producto.getNombre() + " ---");
