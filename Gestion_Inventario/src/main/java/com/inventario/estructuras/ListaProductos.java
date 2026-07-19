@@ -2,7 +2,7 @@ package com.inventario.estructuras;
 
 import com.inventario.modelo.Producto;
 
-
+// Lista enlazada simple de productos.
 public class ListaProductos {
 
     // Atributos
@@ -11,6 +11,11 @@ public class ListaProductos {
     // Constructor
     public ListaProductos() {
         primero = null;
+    }
+
+    // Devuelve el primer nodo para poder recorrer la lista externamente
+    public NodoProducto getPrimero() {
+        return primero;
     }
 
     // Operaciones
@@ -92,13 +97,12 @@ public class ListaProductos {
         }
     }
 
-    // Recorre la lista e imprime el costo total de cada producto y el costo acumulado
+    // Recorre la lista e imprime el costo total de cada producto y el acumulado
     public void generarReporteCostos() {
         if (estaVacia()) {
             System.out.println("La lista de productos esta vacia.\n");
             return;
         }
-        System.out.println("===== Reporte de costos del inventario =====");
         NodoProducto temp = primero;
         double costoAcumulado = 0;
         while (temp != null) {
@@ -109,7 +113,6 @@ public class ListaProductos {
                     producto.getNombre(), producto.getCantidad(), producto.getPrecio(), costoProducto);
             temp = temp.getSiguiente();
         }
-        System.out.printf("Costo total acumulado del inventario: %.2f%n", costoAcumulado);
-        System.out.println("=============================================\n");
+        System.out.printf("Costo total acumulado de la lista: %.2f%n", costoAcumulado);
     }
 }
