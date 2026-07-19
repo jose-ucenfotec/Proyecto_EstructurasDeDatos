@@ -3,6 +3,8 @@ package com.inventario.modelo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+// Entidad Producto. Es el elemento almacenado tanto en el inventario de la
+// Tienda (ArbolProductos) como en el carrito de cada Cliente (ListaProductos).
 public class Producto {
 
     // Atributos
@@ -14,7 +16,6 @@ public class Producto {
     private ArrayList<String> listaImagenes;
 
     // Constructor para productos sin fecha de vencimiento
-
     public Producto(String nombre, double precio, String categoria, int cantidad) {
         this(nombre, precio, categoria, null, cantidad);
     }
@@ -75,17 +76,16 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    // Operaciones sobre la lista de imágenes
+    // Operaciones sobre la lista de imagenes
     public void agregarImagen(String rutaImagen) {
         listaImagenes.add(rutaImagen);
     }
 
-    // Costo total del producto en función de su cantidad
+    // Costo total del producto en funcion de su cantidad
     public double calcularCostoTotal() {
         return precio * cantidad;
     }
 
-    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Nombre: ").append(nombre).append("\n");
