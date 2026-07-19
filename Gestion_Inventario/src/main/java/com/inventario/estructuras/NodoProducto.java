@@ -2,6 +2,7 @@ package com.inventario.estructuras;
 
 import com.inventario.modelo.Producto;
 
+//Nodo de la lista enlazada simple ListaProductos
 public class NodoProducto {
 
     // Atributos
@@ -32,7 +33,6 @@ public class NodoProducto {
         this.siguiente = siguiente;
     }
 
-    @Override
     public String toString() {
         return producto.toString();
     }
